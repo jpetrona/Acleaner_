@@ -1,10 +1,14 @@
 package com.test.acleaner;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StatFs;
+import android.support.v4.app.ActivityCompat;
 import android.text.format.Formatter;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,7 +23,6 @@ import com.the.bestna.cleaner.R;
 import java.io.File;
 
 import Utilities.IDs;
-import ads.AdmobInterstitial;
 import ads.RateMyApp;
 import interfaces.IAdShower;
 
@@ -79,6 +82,14 @@ public class MainActivity1 extends Activity implements
         SetVisibleFragment(getIntent());
 //        this.interstitial = new AdmobInterstitial(this, IDs.AdMobInterstitial);
 //        this.interstitial.loadNewAd();
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
+                    != PackageManager.PERMISSION_GRANTED) {
+                // Camera permi
+                // ssion has not been granted.
+                requestPermissions();
+            }
+        }
     }
 
     @Override
@@ -315,5 +326,33 @@ public class MainActivity1 extends Activity implements
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+    }
+
+    private static final int REQUEST_PERMISSIONS = 0;
+
+    private void requestPermissions() {
+
+        // BEGIN_INCLUDE(camera_permission_request)
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                Manifest.permission.READ_PHONE_STATE)) {
+            // Provide an additional rationale to the user if the permission was not granted
+            // and the user would benefit from additional context for the use of the permission.
+            // For example if the user has previously denied the permission.
+            ActivityCompat.requestPermissions(MainActivity1.this,
+                    new String[]{Manifest.permission.WRITE_SETTINGS,Manifest.permission.READ_SMS,Manifest.permission.READ_PHONE_STATE,Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_CONTACTS},
+                    REQUEST_PERMISSIONS);
+
+        } else {
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.WRITE_SETTINGS,Manifest.permission.READ_SMS,Manifest.permission.READ_CONTACTS,Manifest.permission.READ_PHONE_STATE,Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    REQUEST_PERMISSIONS);
+        }
+        // END_INCLUDE(camera_permission_request)
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }
