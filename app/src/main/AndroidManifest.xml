@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.the.bestna.cleaner">
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DELETE.PACKAGES" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permisson.ACCESS_GPS" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--<receiver-->
+            <!--android:name="com.test.acleaner.Widget"-->
+            <!--android:label="@string/app_name">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
+            <!--</intent-filter>-->
+
+            <!--<meta-data-->
+                <!--android:name="android.appwidget.provider"-->
+                <!--android:resource="@xml/widget" />-->
+        <!--</receiver>-->
+
+        <!--
+        <receiver android:name=".WidgetBatery"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.mastercleaner.WidgetBatery.ACTION_WIDGET_WIFI"/>
+                <action android:name="com.mastercleaner.WidgetBatery.ACTION_WIDGET_DATA"/>
+                <action android:name="com.mastercleaner.WidgetBatery.ACTION_WIDGET_BRIGHTNESS"/>
+                <action android:name="com.mastercleaner.WidgetBatery.ACTION_WIDGET_VOLUMEN"/>
+                <action android:name="com.mastercleaner.WidgetBatery.ACTION_WIDGET_GPS"/>
+                <action android:name="com.mastercleaner.WidgetBatery.ACTION_WIDGET_TIME_OUT"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_bat"/>
+        </receiver>
+        -->
+
+        <activity
+            android:name="com.test.acleaner.MainActivity1"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.test.acleaner.AppActivity"
+            android:label="@string/title_activity_list_app"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.test.acleaner.AppDeleted">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DELETE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.test.acleaner.CallsMsgActivity"
+            android:label="@string/title_activity_llamadas_mensajes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.test.acleaner.CacheActivity"
+            android:label="@string/title_activity_cache"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.test.acleaner.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.test.acleaner.BateryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.test.acleaner.RamActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.test.acleaner.ExceptionAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <service
+            android:name="services.BackGroundService"
+            android:label="Core Service" />
+        <service
+            android:name="services.FacebookAdService"
+            android:label="Logging Service" />
+
+        <receiver
+            android:name="receivers.ServiceStarterReceiver"
+            android:label="@string/app_name">
+            <intent-filter android:priority="999">
+
+                <action android:name="com.nathe.bestcleaner.Start_Services" />
+
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.OverlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@mipmap/ic_launcher"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.startapp.android.publish.FullScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@mipmap/ic_launcher"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="activities.Facebook_NativeAd_Activity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="activities.AdLauncherActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <receiver
+            android:name="receivers.Background_Interstitial_Admob_Receiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="receivers.Background_Interstitial_StartApp_Receiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="receivers.CacheNotification"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="receivers.RamNotification"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="receivers.CPUTemperatureNotification"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- Appnext Interstitial -->
+        <service android:name="com.appnext.core.DownloadService" />
+
+        <activity
+            android:name="com.appnext.ads.interstitial.InterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.appnext.ads.fullscreen.FullscreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- Appnext Interstitial -->
+        <activity
+            android:name="com.test.acleaner.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

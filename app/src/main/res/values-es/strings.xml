@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Best Cleaner</string>
+    <string name="action_settings">ajustes</string>
+    <string name="title_activity_list_app">ListAppActivity</string>
+    <string name="botonDesintalar">desinstalación</string>
+    <string name="title_activity_llamadas_mensajes">LlamadasMensajesActivity</string>
+    <string name="limpiar">Borrar historial</string>
+    <string name="limpiarlogs">Borrar registros</string>
+    <string name="title_activity_cache">CacheActivity</string>
+    <string name="nohaycache">No hay aplicaciones para limpiar su caché.</string>
+    <string name="clearall">Borrar todo caché</string>
+    <string name="optimizer">optimizador</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="app">aplicaciones:</string>
+    <string name="apps">0</string>
+    <string name="espacio">Ocupado:</string>
+    <string name="cantidad">0 Bytes</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+
+    <string name="str_prueba_nombre">Un limpiador</string>
+    <string name="str_prueba_fecha">13/05/2014</string>
+    <string name="str_prueba_byte">5,73 Kb</string>
+    <string name="str_prueba_inf">Cache: 12 KB | Almacenamiento: 19,09 MB | Total: 19,21</string>
+
+    <!-- Rate My Application -->
+    <string name="rate_title">Tarifa</string>
+    <string name="rate_comment_1">Si te gusta usar</string>
+    <string name="rate_comment_2">Por favor tome un momento para calificar el producto. gracias por tu apoyo!</string>
+    <string name="ratemyapp_accept_button_label">Califica ahora</string>
+    <string name="ratemyapp_later_button_label">Remind me later</string>
+    <string name="ratemyapp_cancel_button_label">Recuérdame más tarde</string>
+
+
+    <string name="cache">Cache</string>
+    <string name="callmessage">Llamar / Msj</string>
+    <string name="appmanager">App Manager</string>
+    <string name="history">Historia</string>
+    <string name="cputemp">Temperatura de la CPU</string>
+    <string name="optiRam">Optimizar Ram</string>
+    <string name="battery">Batería</string>
+
+    /* header Title*/
+    <string name="cache_title">CACHE</string>
+    <string name="callmessge_title">Llamar / Msj</string>
+    <string name="appmanager_title">App Manager</string>
+    <string name="history_title">Historia</string>
+    <string name="ram_title">Optimizer Ram</string>
+    <string name="battery_title">Batería</string>
+
+
+    <string name="delete">Borrar</string>
+    <string name="IgnoreList">Lista de ignorados</string>
+    <string name="ignor">Ignorar</string>
+    <string name="selectApplication">Necesitará seleccionar una aplicación!</string>
+    <string name="voltage">voltaje</string>
+    <string name="tempreture">Temperatura</string>
+    <string name="Capacity">Capacidad</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="off">APAGADO</string>
+    <string name="tempreture_hard">Temperatura: 28.3 ºC</string>
+    <string name="volt_hard">voltaje: 4.335 V</string>
+    <string name="cap_hard">Capacidad: 2100 mAh</string>
+    <string name="data">Datos</string>
+    <string name="Brightness">Brillo</string>
+    <string name="Volumen">volumen</string>
+    <string name="GPS">GPS</string>
+    <string name="Timeout">Se acabó el tiempo</string>
+    <string name="no_Data">No hay datos para despejar</string>
+    <string name="cleanMessage">El dispositivo ha sido limpiada!</string>
+    <string name="clean">limpiado</string>
+    <string name="histrycache">Historia de la caché de las aplicaciones</string>
+    <string name="Storage">Almacenamiento</string>
+    <string name="Total">Total</string>
+    <string name="calls">llamadas</string>
+    <string name="incomecall">Llamadas entrantes</string>
+    <string name="outgoing">Extrovertida</string>
+    <string name="misscall">Llamadas perdidas</string>
+    <string name="messgetext">Mensaje de Tex</string>
+    <string name="recMessage">Los mensajes recibidos</string>
+    <string name="sendMessage">Mensajes enviados</string>
+    <string name="needtoselect">Deberá seleccionar al menos un elemento!</string>
+    <string name="cleaning">Limpieza...</string>
+    <string name="nothingtoClean">No hay nada que limpiar</string>
+    <string name="totalDelete">Total de Registros borrados</string>
+    <string name="lookCleaner">Su dispositivo se ve más limpia!</string>
+    <string name="areErased">se borran</string>
+    <string name="inComOut">las llamadas entrantes / salientes y perdidas</string>
+    <string name="reSendMess">de texto de los mensajes enviados / recibidos</string>
+    <string name="canRelease">puede ser liberado</string>
+    <string name="freeRamMem">¿Quieres liberar memoria RAM utilizada por el proceso de</string>
+    <string name="confirm">Confirmar</string>
+    <string name="Browser">Browser</string>
+    <string name="Downloads">Navegador</string>
+    <string name="Records">Archivos</string>
+    <string name="Applications">aplicaciones</string>
+    <string name="Clipboard">Portapapeles</string>
+    <string name="Pag">Página</string>
+    <string name="doesFiles">¿Tiene archivos de medios ?</string>
+    <string name="musicfiles">Se eliminarán los archivos de música , video y fotografía en la carpeta de Descargas.</string>
+    <string name="onceDelete">Una vez eliminados estos archivos , no se pueden recuperar.</string>
+    <string name="Include">Incluir</string>
+    <string name="Exclude">Excluir</string>
+    <string name="needToSelectOne">Deberá seleccionar al menos un elemento!</string>
+    <string name="deviceCleaner">El dispositivo ha sido limpiada!</string>
+    <string name="histroyBrowse">Se limpió el historial del navegador</string>
+    <string name="Hewiped">se secó</string>
+    <string name="downHistory">Historial de descargas</string>
+    <string name="mediafile">historia de archivos multimedia</string>
+    <string name="wipeClip">Histórico limpió el portapapeles</string>
+
+
+    <array name="packer_name_default">
+        <item>system</item>
+        <item>com.android.systemui</item>
+        <item>com.android.phone</item>
+        <item>com.android.nfc</item>
+        <item>com.android.inputmethod.latin</item>
+        <item>com.google.android.inputmethod.latin</item>
+        <item>com.android.mms</item>
+        <item>com.google.android.deskclock</item>
+        <item>com.android.deskclock</item>
+        <item>com.android.defcontainer</item>
+        <item>com.android.launcher</item>
+        <item>com.android.bluetooth</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.launcher</item>
+    </array>
+    <string name="admob_banner_unit_id">ca-app-pub-6412945761525539/1638694408</string>
+    <!--9022360406</string>-->
+    <string name="facebook_app_id">480911548772837</string>
+
+    <string name="Ram_title">Uso de la memoria es pesado</string>
+    <string name="Rame_text">Liberación a lo largo de RAM usada</string>
+    <string name="Cache_title">El uso de caché es pesado</string>
+    <string name="Cache_text">Liberación a lo largo de caché utilizado</string>
+    <string name="Ticker_text">Impulsar su dispositivo !</string>
+
+    <string name="cpuTemper_title">CPU está caliente !</string>
+    <string name="cpuTicker_text">Enfriamiento de la CPU !</string>
+    <string name="cpu_text">Enfriar el CPU se calienta más .</string>
+
+    <string name="Low_Battery_Title">Batería baja !</string>
+    <string name="Low_Battery_Content_Text">Conectar el dispositivo a la alimentación</string>
+    <string name="Low_Battery_Ticker_Text">Batería baja !</string>
+
+</resources>

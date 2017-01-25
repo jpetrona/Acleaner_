@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="bg_color">#427e8e</color>
+    <color name="lock_bg_color">#87cefa</color>
+    <color name="white_color">#ffffff</color>
+    <color name="grey_color">#d2d1d1</color>
+    <color name="black_light">#1a1919</color>
+    <color name="menu_bg">#312b2b</color>
+    <color name="menu_selector">#f9352f2f</color>
+    <color name="pre_bg_color">#0d527a</color>
+
+    <color name="ninety_hundred_color_background">#81c784</color>
+    <color name="ninety_hundred_color_behind">#a5d6a7</color>
+    <color name="ninety_hundred_color_front">#4caf50</color>
+
+    <color name="seventy_ninety_color_background">#dce775</color>
+    <color name="seventy_ninety_color_behind">#f0f4c3</color>
+    <color name="seventy_ninety_color_front">#d4e157</color>
+
+    <color name="fifty_seventy_color_background">#4fc3f7</color>
+    <color name="fifty_seventy_color_behind">#81d4fa</color>
+    <color name="fifty_seventy_color_front">#03a9f4</color>
+
+    <color name="thirty_fifty_color_background">#ffb74d</color>
+    <color name="thirty_fifty_color_behind">#ffcc80</color>
+    <color name="thirty_fifty_color_front">#ff9800</color>
+
+    <color name="fifteen_thirty_color_background">#ff8a65</color>
+    <color name="fifteen_thirty_color_behind">#ffab91</color>
+    <color name="fifteen_thirty_color_front">#ff5722</color>
+
+
+    <color name="zero_fifteen_color_background">#e57373</color>
+    <color name="zero_fifteen_color_behind">#ef9a9a</color>
+    <color name="zero_fifteen_color_front">#f44336</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

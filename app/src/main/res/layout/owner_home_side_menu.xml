@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.90"
+    android:background="@color/menu_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/bg_color">
+
+                <ImageView
+                    android:id="@+id/ivUser"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/storage_icon" />
+
+                <TextView
+                    android:id="@+id/tvStorage_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivUser"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lyRam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/layout_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ram_bar"
+                    android:padding="-10dp" />
+0
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/optiRam"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyCache"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:background="@drawable/layout_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/cache_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/cache"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyCall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:background="@drawable/layout_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/callmessage_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/callmessage"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyAppManager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:background="@drawable/layout_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/app_manager_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/appmanager"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyCpuTemper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:background="@drawable/layout_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/cache_bar"
+                    android:padding="-12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp"
+                    android:text="@string/cputemp" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/lyJunk"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/menu_height"-->
+                <!--android:background="@drawable/layout_selector"-->
+                <!--android:clickable="true"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--android:paddingLeft="24dp"-->
+                <!--android:paddingRight="24dp"-->
+                <!--android:paddingTop="8dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@drawable/bin" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="12dp"-->
+                    <!--android:textColor="@color/white_color"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:text="@string/cputemp" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/lyHistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:background="@drawable/layout_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/history_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/history"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyBattery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:background="@drawable/layout_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/battery_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/battery"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
